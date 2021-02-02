@@ -31,6 +31,7 @@ clustering = KMeans(n_clusters=3)
 y_predicted = clustering.fit_predict(df[['bathroom','car_space','room']])
 #%%
 # df.insert(6,'cluster',y_predicted)
+
 df['cluster'] = y_predicted
 # sns.boxplot(x='cluster', y='total', data=df,palette='tab10')
 # sns.boxplot(x='cluster', y='area', data=df,palette='tab10')
