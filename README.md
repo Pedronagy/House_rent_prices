@@ -16,12 +16,12 @@ On a side note, i've tried other sites too but some had a captcha barrier or wer
 
 ### Analyzing the results
 [I made the analysis of those results](Analisys_zap.py) initially reducing the data to a smaller scale, up to a max rent of 2500, an area of 250 and so on.  
-I did that because the rent data also included commercial buildings with 1000m^2 or 30 car spaces with didn't make sense to me, since i was looking for a house to rent and i don't have R$20.000 to pay rent every month . . . yet.  
-More details can be seen in the file but i tried to make some sense of the data, either comparing variables or clustering similar points.  
-For and easier visualization some of the graphs were exported as images.
+I did that because the rent data also included commercial buildings with 1000m^2 or 30 car spaces which didn't make sense to me, since i was looking for a house to rent and i don't have R$20.000 to pay rent every month . . . yet.  
+More details can be seen in the code but i tried to make some sense of the data comparing variables, ploting box plots to see the distribution and so on.  
+For and easier visualization some of the graphs were exported as images, so i didn't had to make new compilations every time.  
 
 ### Machine learning
-After that, [i applied some machine learning](Machine_learning.py) to make a projection of the data.  
+After that, [i applied some machine learning](Machine_learning.py) to make a projection of the data and cluster similar points.
 So, a house with this many rooms, this area and this number of car spaces will cost how much?, sort of question
 
 ## Future implementations
