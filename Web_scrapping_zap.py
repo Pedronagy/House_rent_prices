@@ -35,11 +35,14 @@ total_pages = int(house_results)//24
 #%%
 
 #24 anuncions por página
+start = timeit.default_timer()
 
 for page in range(1,total_pages):
     url_page = url + str(page) + "&onde=,S%C3%A3o%20Paulo,Campinas,,,,,,BR%3ESao%20Paulo%3ENULL%3ECampinas,-22.909938,-47.062633&transacao=Aluguel&tipo=Im%C3%B3vel%20usado"
     if page%10==0:
-        print(page)
+        print("Page:{}/{}".format(page,total_pages),end=' ')
+        current = timeit.default_timer()
+        print("Time: {:.2f}min Estimated time:{:.2f}min".format((current-start)/60,total_pages*(current-start)/(page*60))  
     
     html_text = requests.get(url_page, headers=headers).text
     soup = BeautifulSoup(html_text, 'lxml')
