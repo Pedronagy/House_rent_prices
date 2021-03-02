@@ -1,4 +1,3 @@
-#%%
 from os import replace
 from bs4 import BeautifulSoup
 import requests
@@ -33,7 +32,7 @@ site_data_names = [
         'link'
     ]
 writer.writerow(site_data_names)
-#%%
+
 start = timeit.default_timer()
 for page in range(20):
     url_page = url + str(page)
@@ -52,18 +51,7 @@ for page in range(20):
         room = card.find('li', class_="property-card__detail-item property-card__detail-room js-property-detail-rooms").text
         bathroom = card.find('li', class_="property-card__detail-item property-card__detail-bathroom js-property-detail-bathroom").text
         car_space = card.find('li', class_="property-card__detail-item property-card__detail-garage js-property-detail-garages").text
-
-        # condominio = card.find('footer', class_='property-card__price-details')
-        # condominio2 = card.find('div', class_='property-card__price-details--condo')
-        # condominio3 = card.find('strong', class_='js-condo-price')
-        # rent1 = card.find('section', class_='property-card__price js-property-card-prices js-property-card__price-small')#.text
         rent2 = card.find('p').text
-        # rent3 = card.find('section', class_="property-card__values").text
-        # rent4 = card.find('section', class_="property-card__values").p.text
-
-        # for condominio_tag in card.find_all('p'):
-        #     print(condominio_tag.text)
-        #     print(condominio_tag.next_sibling) #preço da casa
 
         amenities = ''
         first_count = 1
@@ -77,20 +65,6 @@ for page in range(20):
         condominium_price = ''
         for item in card.select('strong', class_="js-condo-price"):
             condominium_price = item.get_text()
-
-        # print("-------------------------//-------------------")
-        # print("https://www.vivareal.com.br" + link)
-        # print(description[2:].split(' ')[0])
-        # print(location.replace(' - ',','))
-
-        # print(rent2.replace(' ','').replace('.','')[2:-4])
-        # print(condominium_price.replace(' ','').replace('.','')[2:])
-
-        # print(amenities)    
-        # print(area.replace(' ','')[:-2])
-        # print(room.split('  ')[1].replace('--','0'))
-        # print(bathroom.split('  ')[1].replace('--','0'))
-        # print(car_space.split('  ')[1].replace('--','0'))
         
         writer.writerow([
             rent2.replace(' ','').replace('.','')[2:-4], 
@@ -110,6 +84,3 @@ print('Time: ', stop - start, "s")
     
 site_data.close()
 file_printed = pandas.read_csv('site_data.csv',sep='\t',header=None)
-
-
-# %%

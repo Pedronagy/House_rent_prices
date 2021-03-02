@@ -1,5 +1,13 @@
-## House_rent_prices - About
-This project was made in Python 3.8.5
+# House rent prices
+![python](https://img.shields.io/pypi/pyversions/sealion?color=blueviolet&style=plastic)
+## Table of contents
+- [Introduction](#features)
+- [Workflow](#building)
+    - [Get the data](#using-edlib-in-your-project)
+    - [Analyzing the results](#usage-and-examples)
+    - [Machine learning](#api-documentation)
+- [Future implementations](#alignment-methods)
+
 
 ## Introduction
 This is a project of mine to analyse house rent prices on the city of Campinas, in São Paulo state, Brazil.  
@@ -20,7 +28,7 @@ I did that because the rent data also included commercial buildings with 1000m^2
 More details can be seen in the code but i tried to make some sense of the data comparing variables, ploting box plots to see the distribution and so on.  
 For and easier visualization some of the graphs were exported as images, so i didn't had to make new compilations every time.  
 
-### Machine learning
+### Machine learning (in progress)
 After that, [i applied some machine learning](Machine_learning.py) to make a projection of the data and cluster similar points.
 So, a house with this many rooms, this area and this number of car spaces will cost how much?, sort of question
 

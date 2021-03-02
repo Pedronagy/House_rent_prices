@@ -1,4 +1,4 @@
-#%%
+# Import libraries
 from os import replace
 from bs4 import BeautifulSoup
 import requests
@@ -6,13 +6,15 @@ import csv
 import pandas
 import timeit
 
+# Select the source url
 url = "https://www.zapimoveis.com.br/aluguel/imoveis/sp+campinas/?pagina="
 page = 1
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
 }
-#%%
+
+# Create the csv output file with the relevant column names
 site_data =  open('site_data_zap.csv', mode='w',newline='\n', encoding='utf-8')
 writer = csv.writer(site_data,delimiter='\t')
 site_data_names = [
@@ -29,14 +31,13 @@ site_data_names = [
     ]
 writer.writerow(site_data_names)
 
+# Calculate the total number of pages to be read. There are 24 cards per page
 house_results = soup.find('h1', class_='js-summary-title heading-regular heading-regular__bold align-left results__title').text.replace('.','')[:6]
 total_pages = int(house_results)//24
 
-#%%
-
-#24 anuncions por página
 start = timeit.default_timer()
 
+# Scrap the data
 for page in range(1,total_pages):
     url_page = url + str(page) + "&onde=,S%C3%A3o%20Paulo,Campinas,,,,,,BR%3ESao%20Paulo%3ENULL%3ECampinas,-22.909938,-47.062633&transacao=Aluguel&tipo=Im%C3%B3vel%20usado"
     if page%10==0:
@@ -91,6 +92,7 @@ for page in range(1,total_pages):
         except:
             link = ""
 
+        # Correct and clean the data
         writer.writerow([
                 rent.replace(' ','').replace("\n", "").replace(".", "")[2:-4],
                 condominium.replace(' ','').replace("\n", "").replace(".", "")[12:],
@@ -106,6 +108,4 @@ for page in range(1,total_pages):
 
 site_data.close()
 file_printed = pandas.read_csv('site_data_zap.csv',sep='\t',header=None)
-
-# %%
 
