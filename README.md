@@ -1,18 +1,19 @@
 # House rent prices
 ![python](https://img.shields.io/pypi/pyversions/sealion?color=blueviolet&style=plastic)
 ## Table of contents
-- [Introduction](#features)
-- [Workflow](#building)
-    - [Get the data](#using-edlib-in-your-project)
-    - [Analyzing the results](#usage-and-examples)
-    - [Machine learning](#api-documentation)
-- [Future implementations](#alignment-methods)
+- [Introduction](#introduction)
+- [Workflow](#workflow)
+    - [Get the data](#get-the-data)
+    - [Analyzing the results](#analyzing-the-results)
+    - [Machine learning](#machine-learning)
+- [Future implementations](#future-implementations)
 
 
 ## Introduction
 This is a project of mine to analyse house rent prices on the city of Campinas, in São Paulo state, Brazil.  
 My initial motivation was to learn a bit of data science and to find what are the rent prices in Campinas, since i'm thinking of moving to a new house in the next months.  
-Since this was a very practical project with very useful results i choose it as a learning exercise.
+Since this was a very practical project with very useful results i choose it as a learning exercise. 
+The big answer here is: **How much will i have to pay to rent a house ?**
 
 ## Workflow  
 ### Get the data
