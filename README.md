@@ -21,8 +21,8 @@ But the second one is not included on this project, only in my life projects :)
 
 ## Workflow  
 ### Get the data
-I initially do a web scrapping([Web_scrapping_vivareal.py](Web_scrapping_vivareal.py)) on a site called vivareal.com.br with the BeautifulSoup python library. Its not the most efficient way to do web scrapping but its easy and fast, so better suited for a small project like this one.  
-After I made the analysis of the results([Analisys_vivareal.py](Analisys_vivareal.py)), i found out that the claimed "40.000+" results were all the same 65 results repeated over and over again. So i basically wasted my time on that site (#disappointed).  
+I initially do a web scrapping([Web_scrapping_vivareal.py](Failed web scraping/Web_scrapping_vivareal.py)) on a site called vivareal.com.br with the BeautifulSoup python library. Its not the most efficient way to do web scrapping but its easy and fast, so better suited for a small project like this one.  
+After I made the analysis of the results([Analisys_vivareal.py](Failed web scraping/Analisys_vivareal.py)), i found out that the claimed "40.000+" results were all the same 65 results repeated over and over again. So i basically wasted my time on that site (#disappointed).  
 Then  i went to zapimoveis.com.br, made a new web scrapping([Web_scrapping_zap.py](Web_scrapping_zap.py)) which gave actual results (even though the number of results were also inflated) getting about 6000 house prices which i moved to a .csv file.  
 On a side note, i've tried other sites too but some had a captcha barrier or were harder to deal with, since they had an infinite scroll and not single pages results.  
 
@@ -33,7 +33,7 @@ More details can be seen in the code but i tried to make some sense of the data 
 For and easier visualization some of the graphs were exported as images, so i didn't had to make new compilations every time.  
 
 ### Machine learning
-After that, i applied some machine learning ([Machine_learning.ipynb](Machine_learning.ipynb)) to make a projection of the data and cluster similar points.
+After that, i applied some machine learning ([Machine_learning.ipynb](Machine learning.ipynb)) to make a projection of the data and cluster similar points.
 I tried some linear regression and different methods for the clustering.
 
 ## Future implementations
