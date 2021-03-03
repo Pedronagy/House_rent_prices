@@ -33,7 +33,7 @@ More details can be seen in the code but i tried to make some sense of the data 
 For and easier visualization some of the graphs were exported as images, so i didn't had to make new compilations every time.  
 
 ### Machine learning
-After that, i applied some machine learning ([Machine_learning.ipynb](Machine learning.ipynb)) to make a projection of the data and cluster similar points.
+After that, i applied some machine learning ([Machine_learning.ipynb](https://github.com/Pedronagy/House_rent_prices/blob/master/Machine%20learning.ipynb)) to make a projection of the data and cluster similar points.
 I tried some linear regression and different methods for the clustering.
 
 ## Future implementations
