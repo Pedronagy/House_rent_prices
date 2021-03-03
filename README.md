@@ -15,8 +15,8 @@
 This is a project of mine to analyse house rent prices on the city of Campinas, in São Paulo state, Brazil.  
 My initial motivation was to learn a bit of data science and to find what are the rent prices in Campinas, since i'm thinking of moving to a new house in the next months.  
 Since this was a very practical project with very useful results i choose it as a learning exercise. 
-The big question here is: **How much will i have to pay to rent a house in Campinas?**
-The second big question is: **Will i be able to afford it or i'll be homeless forever ?**
+The big question here is: **How much will i have to pay to rent a house in Campinas?**  
+The second big question is: **Will i be able to afford it or i'll be homeless forever ?**  
 But the second one is not included on this project, only in my life projects :)
 
 ## Workflow  
