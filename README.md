@@ -3,8 +3,8 @@
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 
 <p float="left">
-  <img src="https://github.com/Pedronagy/House_rent_prices/blob/master/Figures/area_rent_03.jpeg" width="350" />
-  <img src="https://github.com/Pedronagy/House_rent_prices/blob/master/Figures/general_02.jpeg" width="550" /> 
+  <img src="https://github.com/Pedronagy/House_rent_prices/blob/master/Figures/area_rent_03.jpeg" width="200" />
+  <img src="https://github.com/Pedronagy/House_rent_prices/blob/master/Figures/general_02.jpeg" width="320" /> 
 </p>
 
 ## Table of contents
