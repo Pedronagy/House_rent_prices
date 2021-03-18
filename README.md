@@ -2,7 +2,10 @@
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 
-![Example data image](https://github.com/Pedronagy/House_rent_prices/blob/master/Figures/area_rent_03.jpeg) ![Example data image](https://github.com/Pedronagy/House_rent_prices/blob/master/Figures/general_02.jpeg)
+<p float="left">
+  <img src="https://github.com/Pedronagy/House_rent_prices/blob/master/Figures/area_rent_03.jpeg" width="350" />
+  <img src="https://github.com/Pedronagy/House_rent_prices/blob/master/Figures/general_02.jpeg" width="550" /> 
+</p>
 
 ## Table of contents
 - [Introduction](#introduction)
